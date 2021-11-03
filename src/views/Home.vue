@@ -58,7 +58,7 @@ export default {
   border-width: 5px;
   border-radius: 30px;
   width: 600px;
-  height: 400px;
+  height: 350px;
   background-color: #33bb77;
   background-size: cover;
   display: flex;

@@ -1,5 +1,5 @@
 # fishing-mania
-
+Paul RIPAULT @paulripault Alexis MICHAUD @AlexisMCHD Julien BOSSARD @jbbsd
 ## Project setup
 ```
 npm install
