@@ -1,11 +1,7 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/register">Register</router-link> |
-    <router-link to="/dashboard">Dashboard</router-link> |
-    <button @click="logout">Logout</button>
-  </div>
+<div class="closed"> 
   <router-view />
+</div>
 </template>
 
 <script>
@@ -32,28 +28,32 @@ export default {
 </script>
 
 <style>
-#app {
+.closed {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+ 
+  margin: 0%;
+  border: 0ch;
 }
 
 input {
   margin-right: 20px;
 }
-
-#nav {
-  padding: 30px;
+body{
+  background: url("assets/img/background.jpg") no-repeat center center  fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+html{
+  width: 100%;
+  height: 100%;
 }
 </style>

@@ -5,6 +5,8 @@
       <input type="email" placeholder="Email address..." v-model="email" />
       <input type="password" placeholder="password..." v-model="password" />
       <button type="submit">S'enregistrer</button>
+      <router-link to="/">Home</router-link> |
+
     </form>
   </div>
 </template>
