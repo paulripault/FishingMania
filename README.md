@@ -19,6 +19,14 @@ npm run build
 ```
 npm run lint
 ```
+# Packages 
+# geolocalisation package
+```
+npm install vue-browser-geolocation
+npm install vue2-google-maps
+```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Vuetify
+```
+vue add vuetify
+```

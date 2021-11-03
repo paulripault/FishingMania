@@ -3,6 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/register">Register</router-link> |
     <router-link to="/dashboard">Dashboard</router-link> |
+    <router-link to="/maps">Maps</router-link> | 
     <button @click="logout">Logout</button>
   </div>
   <router-view />
