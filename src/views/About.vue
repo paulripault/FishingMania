@@ -54,7 +54,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:20%;
+  margin-top:10%;
 }
 .background{
   border-color: grey;
