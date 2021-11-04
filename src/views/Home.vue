@@ -1,24 +1,38 @@
 <template>
-<div class=flexcontainer>
-  <div class="background">
-    <form @submit.prevent="login">
-      <br><br>
-      <h2>Se connecter</h2>
-      <div ><input type="email" class="inpt" placeholder="Adresse Email" v-model="email" /></div>
-      <div ><input class="inpt" type="password" placeholder="Mot de passe" v-model="password" /></div>
-      <div><button type="submit" class="btn">Se connecter</button></div>
-      <router-link to="/CGU" >
-      <div class="title">Condition générale d'utilisation</div>
-      </router-link>
-      <router-link to="/register" >
-      <div class="title">S'enregistrer</div>
-      </router-link>
-      <router-link to="/register" >
-      <div class="title">Mot de passe oublier</div>
-      </router-link>
-    </form>
+  <div class="flexcontainer">
+    <div class="background">
+      <form @submit.prevent="login">
+        <br /><br />
+        <h2>Se connecter</h2>
+        <div>
+          <input
+            type="email"
+            class="inpt"
+            placeholder="Adresse Email"
+            v-model="email"
+          />
+        </div>
+        <div>
+          <input
+            class="inpt"
+            type="password"
+            placeholder="Mot de passe"
+            v-model="password"
+          />
+        </div>
+        <div><button type="submit" class="btn">Se connecter</button></div>
+        <router-link to="/CGU">
+          <div class="title">Condition générale d'utilisation</div>
+        </router-link>
+        <router-link to="/register">
+          <div class="title">S'enregistrer</div>
+        </router-link>
+        <router-link to="/register">
+          <div class="title">Mot de passe oublier</div>
+        </router-link>
+      </form>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -46,14 +60,13 @@ export default {
 </script>
 
 <style>
-.flexcontainer{
+.flexcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:10%;
+  margin-top: 10%;
 }
-.background{
-  
+.background {
   border-color: grey;
   border-width: 5px;
   border-radius: 30px;
@@ -64,7 +77,7 @@ export default {
   display: flex;
   flex-direction: column;
 }
-.inpt{
+.inpt {
   background-color: #ffffff;
   border-color: grey;
   border-width: 2px;
@@ -73,21 +86,21 @@ export default {
   height: 25px;
   margin-top: 6px;
 }
-h2{
+h2 {
   color: white;
 }
-.btn{
+.btn {
   border-color: #33bb77;
   border-width: 2px;
   border-radius: 10px;
-  color:#33bb77;
+  color: #33bb77;
   background-color: #ffffff;
   width: 30%;
   height: 30px;
   margin-top: 6px;
   margin-right: 22px;
 }
-.title{
+.title {
   margin-top: 10px;
   text-decoration: none;
 }
