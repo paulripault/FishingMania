@@ -13,7 +13,7 @@
       <router-link to="/register" >
       <div class="title">S'enregistrer</div>
       </router-link>
-      <router-link to="/register" >
+      <router-link to="/mdp" >
       <div class="title">Mot de passe oublier</div>
       </router-link>
     </form>

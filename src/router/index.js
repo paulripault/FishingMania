@@ -23,6 +23,33 @@ const routes = [
       authRequired: true,
     },
   },
+  {
+    path: "/favorite",
+    name: "Favoris",
+    component: () =>
+      import(/* webpackChunkName: "Favoris" */ "../views/favorite.vue"),
+    meta: {
+      authRequired: true,
+    },
+  },
+  {
+    path: "/Add",
+    name: "Ajout",
+    component: () =>
+      import(/* webpackChunkName: "Ajout" */ "../views/Add.vue"),
+    meta: {
+      authRequired: true,
+    },
+  },
+  {
+    path: "/Logout",
+    name: "Déconnection",
+    component: () =>
+      import(/* webpackChunkName: "déconnection" */ "../views/Logout.vue"),
+    meta: {
+      authRequired: true,
+    },
+  },
 ];
 
 const router = createRouter({

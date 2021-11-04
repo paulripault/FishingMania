@@ -9,10 +9,21 @@
           <span></span>
           <span></span>
           <ul id="menu">
-            <a href="#"><li>Tableau de bord</li></a>
-            <a href="#"><li>Favoris</li></a>
-            <a href="#"><li>Ajout</li></a>
-            <a @click="logout" href="#"><li>Déconnection</li></a>
+            <router-link to="/Dashboard" >
+              <a><li>Tableau de bord</li></a>
+            </router-link>
+            <router-link to="/Add" >
+              <a><li>Ajout</li></a>
+            </router-link>
+            <router-link to="/favorite" >
+              <a><li>Favoris</li></a>
+            </router-link>
+            <router-link to="/Fish" >
+              <a><li>Poissondex</li></a>
+            </router-link>
+            <router-link to="/Logout" >
+              <a><li>Déconnection</li></a>
+            </router-link>
           </ul>
         </div>
       </nav>

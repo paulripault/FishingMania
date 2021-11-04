@@ -4,8 +4,8 @@
     <form @submit.prevent="register">
       <br><br>
       <h2>S'enregistrer</h2>
-      <div><input type="email" class="inpt" placeholder="Email address..." v-model="email" /></div>
-      <div><input type="password" class="inpt" placeholder="password..." v-model="password" /></div>
+      <div><input type="email" class="inpt" placeholder="Email" v-model="email" /></div>
+      <div><input type="password" class="inpt" placeholder="Mot de passe" v-model="password" /></div>
       <div><button type="submit" class="btn">S'enregistrer</button> </div>
       <router-link to="/CGU" >
       <div class="title">Condition générale d'utilisation</div>
