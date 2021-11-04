@@ -3,7 +3,7 @@
     <input
       type="text"
       id="search-bar"
-      placeholder="What can I help you with today?"
+      placeholder="Veuillez entrer un nom de poisson"
     />
     <a href="#"
       ><img
@@ -11,6 +11,10 @@
         src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"
     /></a>
   </form>
+
+  <div class="fishcontainer">
+    <p>Hey !</p>
+  </div>
 </template>
 
 <script>
