@@ -23,6 +23,15 @@ const routes = [
       authRequired: true,
     },
   },
+  {
+    path: "/fish",
+    name: "Fish",
+    component: () =>
+      import(/* webpackChunkName: "dashboard" */ "../views/Fish.vue"),
+    meta: {
+      authRequired: false,
+    },
+  },
 ];
 
 const router = createRouter({
