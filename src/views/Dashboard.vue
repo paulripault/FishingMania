@@ -48,9 +48,10 @@
           <h2 class="h2">Autour de vous</h2>
             <img class="lake" src="../assets/img/lake.png"/>
         </form>
+        <br>
       </div>
     </div>
-      
+      <br><br>
   </div>
   
 </template>
