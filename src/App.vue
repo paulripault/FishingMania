@@ -1,7 +1,7 @@
 <template>
-<div class="closed"> 
-  <router-view />
-</div>
+  <div class="closed">
+    <router-view />
+  </div>
 </template>
 
 <script>
@@ -23,9 +23,9 @@
 input {
   margin-right: 20px;
 }
-body{
-  background: url("assets/img/background.jpg") no-repeat center center  fixed;
--webkit-background-size: cover;
+body {
+  background: url("assets/img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -33,7 +33,7 @@ body{
   height: 100%;
   margin: 0%;
 }
-html{
+html {
   width: 100%;
   height: 80%;
 }
