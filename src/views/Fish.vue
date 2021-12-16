@@ -1,25 +1,142 @@
 <template>
-  <form class="search-container">
-    <input
-      type="text"
-      id="search-bar"
-      placeholder="What can I help you with today?"
-    />
-    <a href="#"
-      ><img
-        class="search-icon"
-        src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"
-    /></a>
-  </form>
+<div>
+<div class="navbar">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <router-link to="/Dashboard" >
+              <a><li>Tableau de bord</li></a>
+            </router-link>
+            <router-link to="/Add" >
+              <a><li>Ajout</li></a>
+            </router-link>
+            <router-link to="/favorite" >
+              <a><li>Favoris</li></a>
+            </router-link>
+            <router-link to="/Fish" >
+              <a><li>Poissondex</li></a>
+            </router-link>
+            <router-link to="/Logout" >
+              <a><li>Déconnection</li></a>
+            </router-link>
+          </ul>
+        </div>
+      </nav>
+      <h2 class="menu">TABLEAU DE BORD</h2>
+      
+    </div>
+    <div>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Truite</a></li>
+  <li><a href="#">Esturgeon</a></li>
+
+  <li><a href="#">Gardon</a></li>
+  <li><a href="#">Carpe</a></li>
+
+  <li><a href="#">Ecrevisse</a></li>
+  <li><a href="#">Blackbass</a></li>
+  <li><a href="#">Brochet</a></li>
+</ul>
+  </div>
+  </div>
+  
 </template>
 
 <script>
+/*function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}*/
+
 </script>
 
 <style>
 body {
   padding-top: 75px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.navbar{
+  margin-top: -10%;
+  color: #ffffff;
+  border-width: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: #33bb77;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.menu{
+  color: #ffffff;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
 
 .search-container {
   width: 490px;
