@@ -1,6 +1,6 @@
 <template>
 <div class="flexcontainer">
-
+    <!-- navbar component -->
     <div class="navbar">
       <nav role="navigation">
         <div id="menuToggle">
@@ -31,6 +31,7 @@
     </div>
 
     <div>
+          <!-- Favoris page -->
       <div class="background">
         <form @submit.prevent="register">
             <br><br>
@@ -58,26 +59,6 @@
 
 
 <script>
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-
-export default {
-  methods: {
-    logout() {
-      firebase
-        .auth()
-        .signOut()
-        .then(() => {
-          alert("Successfully logged out");
-          this.$router.push("/");
-        })
-        .catch((error) => {
-          alert(error.message);
-          this.$router.push("/");
-        });
-    },
-  },
-}
 
 </script>
 

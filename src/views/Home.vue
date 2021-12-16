@@ -1,5 +1,6 @@
 <template>
   <div class="flexcontainer">
+    <!-- login component -->
     <div class="background">
       <form @submit.prevent="login">
         <br /><br />
@@ -19,6 +20,7 @@
             placeholder="Mot de passe"
             v-model="password"
           />
+              <!-- ajout des url utiles -->
         </div>
         <div><button type="submit" class="btn">Se connecter</button></div>
         <router-link to="/CGU">
@@ -27,18 +29,21 @@
         <router-link to="/register">
           <div class="title">S'enregistrer</div>
         </router-link>
+            <!-- lien mdp oublier
         <router-link to="/register">
           <div class="title">Mot de passe oublier</div>
-        </router-link>
+        </router-link>-->
       </form>
     </div>
   </div>
 </template>
 
 <script>
+//importaion des modules de connexion 
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 
+//Construction de la méthode de connexion
 export default {
   name: "Home",
   components: {},

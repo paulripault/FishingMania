@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import firebase from "firebase/compat/app";
 
+//ajout des clefs pour pouvoir lier le code à la bdd firebase
+
 const firebaseConfig = {
   apiKey: "AIzaSyCRMazgzzUYzHaKrtwNbRhBLVJ7wRDh_x0",
   authDomain: "fishingmania-75d8c.firebaseapp.com",

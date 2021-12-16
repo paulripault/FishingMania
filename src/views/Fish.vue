@@ -1,5 +1,6 @@
 <template>
 <div>
+      <!-- navbar component -->
 <div class="navbar">
       <nav role="navigation">
         <div id="menuToggle">
@@ -29,9 +30,11 @@
       <h2 class="menu">TABLEAU DE BORD</h2>
       
     </div>
+        <!-- Searchbar component -->
     <div>
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
+      <!-- Contenus de la Search bar -->
 <ul id="myUL">
   <li><a href="#">Truite</a></li>
   <li><a href="#">Esturgeon</a></li>
@@ -49,6 +52,7 @@
 </template>
 
 <script>
+//fonction permettant le tri des éléments pour les sélectionner en fonction de l'entré de l'input de la search bar
 /*function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");

@@ -1,5 +1,6 @@
 <template>
 <div class="flexcontainer">
+      <!-- navbar component -->
     <div class="navbar">
       <nav role="navigation">
         <div id="menuToggle">
@@ -30,6 +31,7 @@
     </div>
 
     <div>
+          <!-- logout component -->
       <div class="background">
         <form @submit.prevent="register">
             <br>
@@ -56,9 +58,11 @@
 
 
 <script>
+//importaion des modules de connexion 
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 
+//Construction de la méthode de déconnexion
 export default {
   methods: {
     logout() {
